@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+        #exampleModal.modal.fade(itemprop='name',content='Modal',tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+            .modal-dialog(role='document')
+              .modal-content
+                .modal-header
+                  h5#exampleModalLabel.modal-title(itemprop='heading') Modal title
+                  button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+                .modal-body(itemprop='body',content='modal-body')
+                  h1 You just clicked the 'click'button
+                .modal-footer
+                  button.btn.btn-secondary(itemprop='',content='modal-button',type='button' data-dismiss='modal') Close

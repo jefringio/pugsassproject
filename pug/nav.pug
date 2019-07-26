@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+        nav.navbar.navbar-expand-md.navbar-dark.sticky-top.bg-dark
+            a.navbar-brand(itemprop='name',content='logo',href='#') Fixed navbar
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            #navbarCollapse.collapse.navbar-collapse
+              ul.navbar-nav.mr-auto
+                li.nav-item.active
+                  a.nav-link(href='#')
+                    | Home 
+                    span.sr-only (current)
+                li.nav-item
+                  a.nav-link(href='#') Link
+                li.nav-item
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                      |Click Me</button>
+                li.nav-item.dropdown
+                  a.nav-link.dropdown-toggle(itemprop='image',content='dropdown',href='#' data-toggle='dropdown') Messages
+                  .dropdown-menu
+                    a.dropdown-item(href='#') Inbox
+                    a.dropdown-item(href='#') Sent
+                    a.dropdown-item(href='#') Drafts
+        

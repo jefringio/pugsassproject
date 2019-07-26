@@ -1,0 +1,48 @@
+
+body{
+  
+}
+.navbar{
+    background-color: black;
+    margin-top: -35px;
+   // z-index: 1400;
+
+}
+
+.btn.btn-link{
+    &::after {
+      content: "-";
+      font-weight: bolder;
+      position: absolute;
+      right: 34px;
+      top: 15px;
+      font-size: 30px;
+  
+    }
+  }
+
+  .btn.btn-link.collapsed{
+      &::after{
+        content: "+";
+        font-weight: bolder;
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        font-size: 30px;
+      }
+    
+    }
+    .jumbotron {
+      background-image: url("https://mymodernmet.com/wp/wp-content/uploads/2019/05/wide-angle-landscape-photography-tutorial-mads-peter-iversen-2.jpg");
+      background-size: cover;
+      color: white;
+      position: relative;
+      display: block;
+      min-height: 500px;
+    
+      &-content {
+          padding-top: 100px;
+          top:60px;
+      }
+    }
+
