@@ -1,7 +1,3 @@
-.navbar {
-  background-color: black;
-  margin-top: -35px; }
-
 .btn.btn-link::after {
   content: "-";
   font-weight: bolder;
